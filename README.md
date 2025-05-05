@@ -10,7 +10,6 @@ The IOC Extractor is a lightweight Python script designed to extract Indicators 
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Directory Structure](#directory-structure)
-- [Sample Input and Output](#sample-input-and-output)
 - [Use Cases](#use-cases)
 - [License](#license)
 
@@ -45,3 +44,29 @@ Clone the repository or download the source files:
 ```bash
 git clone https://github.com/YOUR_USERNAME/ioc_extractor.git
 cd ioc_extractor
+
+## Usage
+
+To run the tool, use the following command:
+
+```bash
+python ioc_extractor.py sample_input.txt
+
+## Directory Structure
+ioc_extractor/
+├── ioc_extractor.py # Main script file
+├── sample_input.txt # Example input file (optional)
+├── ips.txt # Output file for IP addresses (generated)
+├── domains.txt # Output file for domains (generated)
+├── hashes.txt # Output file for hashes (generated)
+└── README.md # Project documentation
+
+
+## Use Cases
+
+- Extracting key IOCs from MISP exports or threat intelligence reports
+- Preprocessing data for ingestion into a SIEM
+- Quickly identifying malicious elements in log files or email content
+- Supporting incident response and triage efforts
+
+
