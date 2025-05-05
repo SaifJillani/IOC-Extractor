@@ -1,0 +1,4 @@
+Suspicious IP: 192.168.1.5
+Domain: badwebsite.evil
+Malware hash: d41d8cd98f00b204e9800998ecf8427e
+Another hash: f2ca1bb6c7e907d06dafe4687e579fce9e67d5f7
