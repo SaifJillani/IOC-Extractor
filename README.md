@@ -1,20 +1,33 @@
 # IOC Extractor Tool
 
-A lightweight Python script to extract Indicators of Compromise (IOCs) such as IP addresses, domain names, and cryptographic hashes from unstructured text files. This tool is useful for SOC analysts, incident responders, and cybersecurity researchers who frequently analyze threat intelligence reports or log data.
+The IOC Extractor is a lightweight Python script designed to extract Indicators of Compromise (IOCs) such as IP addresses, domain names, and file hashes (MD5, SHA1, SHA256) from unstructured plain text files. This tool is particularly useful for SOC (Security Operations Center) analysts, threat hunters, and incident responders who need to quickly identify and isolate IOCs from threat reports or log files.
+
+---
+
+## Table of Contents
+
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Directory Structure](#directory-structure)
+- [Sample Input and Output](#sample-input-and-output)
+- [Use Cases](#use-cases)
+- [License](#license)
 
 ---
 
 ## Features
 
-- Extracts:
+- Extracts the following types of IOCs from text:
   - IPv4 addresses
-  - Domain names (FQDN)
+  - Domain names
   - Cryptographic hashes (MD5, SHA1, SHA256)
-- Saves results into separate output files:
-  - `ips.txt`
-  - `domains.txt`
-  - `hashes.txt`
-- No external libraries required (only built-in Python modules)
+- Outputs results into separate, clean text files:
+  - `ips.txt` for IP addresses
+  - `domains.txt` for domain names
+  - `hashes.txt` for file hashes
+- Built using standard Python libraries (no third-party dependencies)
+- Fast, portable, and easy to use in SOC workflows
 
 ---
 
@@ -23,15 +36,12 @@ A lightweight Python script to extract Indicators of Compromise (IOCs) such as I
 ### Requirements
 
 - Python 3.6 or higher
+- A plain text file containing IOCs (such as a threat report, log dump, or raw feed)
 
-No third-party packages are needed.
+### Installation
 
----
-
-## Usage
-
-1. Place your threat report or log file as a plain text file (e.g., `sample_input.txt`).
-2. Run the script using:
+Clone the repository or download the source files:
 
 ```bash
-python ioc_extractor.py sample_input.txt
+git clone https://github.com/YOUR_USERNAME/ioc_extractor.git
+cd ioc_extractor
